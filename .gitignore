@@ -1,0 +1,28 @@
+# Dependencias
+node_modules/
+
+# Compilación
+dist/
+dist-ssr/
+*.local
+
+# Variables de entorno (nunca subir credenciales)
+.env
+.env.*
+!.env.example
+
+# Credenciales temporales para aplicar migraciones (nunca subir)
+.supabase.local
+
+# Supabase local
+supabase/.branches
+supabase/.temp
+
+# Editor y sistema
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+coverage/

@@ -1,0 +1,14 @@
+-- ============================================================
+-- Compila · Seed
+-- ============================================================
+--
+-- No se insertan datos ficticios: Compila debe mostrar únicamente
+-- información real creada por las cuentas del grupo.
+--
+-- Para probar la aplicación:
+--   1. Aplica las migraciones en Supabase.
+--   2. Regístrate desde /registro.
+--   3. Crea tu primera asignatura, espacio o nota.
+--
+-- Para convertir una cuenta en miembro de un espacio, usa la
+-- invitación desde la interfaz (nunca inserts manuales de roles).
