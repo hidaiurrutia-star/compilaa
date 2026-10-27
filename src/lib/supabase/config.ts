@@ -1,5 +1,5 @@
-const rawUrl = import.meta.env.VITE_SUPABASE_URL?.trim() ?? '';
-const rawKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY?.trim() ?? '';
+const rawUrl = (import.meta.env.VITE_SUPABASE_URL?.trim() || 'https://oyaibhkionbhvelkyarb.supabase.co');
+const rawKey = (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY?.trim() || 'sb_publishable_iV4puZPAfftjnNhIN8dBWQ_p62h2uAx');
 
 export interface SupabaseConfig {
   url: string;
