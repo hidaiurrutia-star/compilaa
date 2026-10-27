@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components -- Archivo de configuración de rutas: mezcla exports de configuración y componentes lazy. */
 import { lazy, Suspense, type ReactNode } from 'react';
-import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { createHashRouter, Navigate } from 'react-router-dom';
 import { AuthLayout } from '../features/auth/components/AuthLayout';
 import { ProtectedRoute, PublicOnlyRoute } from '../features/auth/components/AuthGuards';
 import { AppLayout } from '../components/layout/AppLayout';
@@ -62,7 +62,7 @@ function withSuspense(element: ReactNode) {
   return <Suspense fallback={<PageLoader label="Cargando la página…" />}>{element}</Suspense>;
 }
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     element: <Navigate to="/dashboard" replace />,
